@@ -222,94 +222,70 @@ def predict():
         # Source
         # Banglore = 0 (not in column)
         Source = request.form["Source"]
-        if (Source == 'Delhi'):
-            s_Delhi = 1
+        if (Source == 'New Delhi'):
+            s_NewDelhi = 1
             s_Kolkata = 0
             s_Mumbai = 0
             s_Chennai = 0
 
         elif (Source == 'Kolkata'):
-            s_Delhi = 0
+            s_NewDelhi = 0
             s_Kolkata = 1
             s_Mumbai = 0
             s_Chennai = 0
 
         elif (Source == 'Mumbai'):
-            s_Delhi = 0
+            s_NewDelhi = 0
             s_Kolkata = 0
             s_Mumbai = 1
             s_Chennai = 0
 
         elif (Source == 'Chennai'):
-            s_Delhi = 0
+            s_NewDelhi = 0
             s_Kolkata = 0
             s_Mumbai = 0
             s_Chennai = 1
 
         else:
-            s_Delhi = 0
+            s_NewDelhi = 0
             s_Kolkata = 0
             s_Mumbai = 0
             s_Chennai = 0
-
-        # print(s_Delhi,
-        #     s_Kolkata,
-        #     s_Mumbai,
-        #     s_Chennai)
 
         # Destination
         # Banglore = 0 (not in column)
         Source = request.form["Destination"]
         if (Source == 'Cochin'):
             d_Cochin = 1
-            d_Delhi = 0
             d_New_Delhi = 0
             d_Hyderabad = 0
             d_Kolkata = 0
         
-        elif (Source == 'Delhi'):
-            d_Cochin = 0
-            d_Delhi = 1
-            d_New_Delhi = 0
-            d_Hyderabad = 0
-            d_Kolkata = 0
-
         elif (Source == 'New_Delhi'):
             d_Cochin = 0
-            d_Delhi = 0
             d_New_Delhi = 1
             d_Hyderabad = 0
             d_Kolkata = 0
 
         elif (Source == 'Hyderabad'):
             d_Cochin = 0
-            d_Delhi = 0
             d_New_Delhi = 0
             d_Hyderabad = 1
             d_Kolkata = 0
 
         elif (Source == 'Kolkata'):
             d_Cochin = 0
-            d_Delhi = 0
             d_New_Delhi = 0
             d_Hyderabad = 0
             d_Kolkata = 1
 
         else:
             d_Cochin = 0
-            d_Delhi = 0
             d_New_Delhi = 0
             d_Hyderabad = 0
             d_Kolkata = 0
 
-        # print(
-        #     d_Cochin,
-        #     d_Delhi,
-        #     d_New_Delhi,
-        #     d_Hyderabad,
-        #     d_Kolkata
-        # )
-        
+
 
     #     ['Total_Stops', 'Journey_day', 'Journey_month', 'Dep_hour',
     #    'Dep_min', 'Arrival_hour', 'Arrival_min', 'Duration_hours',
@@ -344,11 +320,10 @@ def predict():
             Vistara,
             Vistara_Premium_economy,
             s_Chennai,
-            s_Delhi,
             s_Kolkata,
             s_Mumbai,
+            s_NewDelhi,
             d_Cochin,
-            d_Delhi,
             d_Hyderabad,
             d_Kolkata,
             d_New_Delhi
