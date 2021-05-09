@@ -222,7 +222,7 @@ def predict():
         # Source
         # Banglore = 0 (not in column)
         Source = request.form["Source"]
-        if (Source == 'New Delhi'):
+        if (Source == "New Delhi"):
             s_NewDelhi = 1
             s_Kolkata = 0
             s_Mumbai = 0
@@ -261,7 +261,7 @@ def predict():
             d_Hyderabad = 0
             d_Kolkata = 0
         
-        elif (Source == 'New_Delhi'):
+        elif (Source == "New Delhi"):
             d_Cochin = 0
             d_New_Delhi = 1
             d_Hyderabad = 0
