@@ -1,16 +1,21 @@
 body {
-    background-color: #e1f4f3;
+    background-color: #e2e1f4;
     text-align: center;
 }
 
 .navbar {
-    background-color: #333333;
+    background-color: #e92424;
+    color:whitesmoke;
 }
 
 a {
-    color: #f1f9f9;
+    color: #12140a;
 }
 
 a:hover {
     color: #f0f0f0;
   }
+.card{
+    background-color: #e2e1f4;
+
+}
