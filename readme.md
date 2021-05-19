@@ -3,7 +3,7 @@
 
 
 ## Deployed Model 
-Link: [https://flight-price-prediction-api.herokuapp.com/](https://flight-price-prediction-api.herokuapp.com/)
+Link: [https://flight-fare-predictor4371.herokuapp.com/](https://flight-fare-predictor4371.herokuapp.com/)
 
 
 
